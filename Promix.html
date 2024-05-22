@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .center-elements {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .left-element,
+        .right-elements {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-elements {
+            gap: 10px;
+        }
+
+        .navbar a {
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .home-icon {
+            width: 42px;
+            height: 42px;
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 56px;
+            text-align: center;
+            color: #302F3C;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            text-decoration: none;
+        }
+
+        .signup-button {
+            background-color: #E94339;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+
+        .signup-button:hover {
+            background-color: #E94339;
+            /* Darker green on hover */
+            color: black;
+            /* Change text color on hover */
+        }
+
+        .bdy {
+            margin-top: 20px;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .input-form {
+            background-color: #dfdfdf;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+            margin-top: 20px;
+        }
+
+        .contains {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .orange-text {
+            color: #E94339;
+        }
+
+        .img-button {
+            background-color: #FAFAFA;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+            max-width: 150px;
+            /* Adjusted width to be consistent */
+        }
+
+        .img-button1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Adjust this to control space between text and image */
+            background-color: #FAFAFA;
+            border: none;
+            padding: 10px 20px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .img-button img,
+        .img-button1 img {
+            border-radius: 20px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .img-button1 img {
+            margin-left: auto;
+        }
+
+        .arrow-button {
+            background-color: #FF5331;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            height: 36px;
+            width: 36px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+        .arrow-button1 {
+            background-color: #E2E2E2;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 100px;
+            max-width: 150px;
+        }
+
+        .img-icon {
+            background-color: #FAFAFA;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+            height: 167px;
+            width: 154px;
+            /* Adjusted width to be consistent */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-element">
+            <a class="homeButton" href="#">🍕</a>
+        </div>
+        <div class="center-elements">
+            <a href="#">Restaurants</a>
+            <a href="#">Recipes</a>
+            <a href="#">About</a>
+            <a href="#">Page <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="right-elements">
+            <a href="#">Login</a>
+            <a class="signup-button" href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="navbar">
+        <div style="max-width: 50%;" class="left-element">
+            <div class="bdy">
+                <p class="bold-text" style="font-size: 40px;">Your Favorite Food Delivery Partner</p>
+                <p>The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven
+                    to your doorstep. </p>
+
+                <div>
+                    <form class="input-form">
+                        <input style="background-color: #dfdfdf; margin-left: 20px;" type="text" id="delivery-location"
+                            name="delivery-location" placeholder="Enter your delivery location">
+                        <button style="margin-left: 80px; margin-right: 5px;" class="signup-button" type="submit">Order
+                            Now</button>
+                    </form>
+                </div>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div>
+                        <button><img style="border-radius: 10px; max-width: 120px; max-height: 40px;"
+                                src="appleLogo.png" alt="apple logo"></button>
+                    </div>
+                    <div style="margin-left: 10px;"><button><img
+                                style="border-radius: 10px; max-width: 120px; max-height: 40px;" src="googlelogo.png"
+                                alt="google logo"></button></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div style="max-width: 40%;" class="right-elements">
+            <div  style="background-color: #FFFFD6; padding-top: 20px; padding-left: 20px; padding-right: 20px; border-radius: 30px;" class="bdy">
+                <img src="sjkjdf.png" alt="Food Delivery Man">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div style="display: flex; margin-top: 100px;" class="flex-container">
+                <p style="font-size: 35px; font-weight: bold;">MORE THAN </p>
+                <p style="font-size: 35px; font-weight: bold; margin-left: 5px; margin-right: 5px;" class="orange-text">
+                    10,000 </p>
+                <p style="font-size: 35px; font-weight: bold;"> DISHES</p>
+            </div>
+            <p style="font-size: 35px; font-weight: bold;" class="flex-container">TO ORDER!</p>
+            <p class="flex-container">Welcome to The Biggest Network of Food Ordering & Delivery</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px;">
+        <div style="margin-right: 40px; display: flex; justify-content: flex-end; gap: 10px;">
+            <button class="img-button">
+                <img style="border-radius: 100px; height: 60px; width: 60px;" src="pizza.png" alt="png">
+                <p style="font-size: small; margin-top: 25px;">Pizza</p>
+            </button>
+
+            <button class="img-button">
+                <img style="border-radius: 100px; height: 60px; width: 60px;" src="burger.png" alt="png">
+                <p style="font-size: small; margin-top: 25px;">Burger</p>
+            </button>
+
+            <button class="img-button">
+                <img style="border-radius: 100px; height: 60px; width: 60px;" src="sushi.png" alt="png">
+                <p style="font-size: small; margin-top: 25px;">Sushi</p>
+            </button>
+
+            <button class="img-button1">
+                <div style="font-size: small;">
+                    Find <b style="color: #E94339;">deals</b>, <b style="color: green;">free delivery</b>, and more from
+                    our restaurant partners.
+                </div>
+                <img style="height: 55px; width: 80px; margin-left: 10px; border-radius: 20px;" src="bike.png"
+                    alt="png">
+            </button>
+        </div>
+
+    </div>
+    <div style="margin: 40px; display: flex;">
+        <div style="width: 40%;">
+            <img style="height: 30px; width: 40px;" src="vector.png" alt="vc">
+            <p style="color: rgb(129, 122, 122);">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+        </div>
+
+        <div>
+            <button class="img-button">
+                <img style="border-radius: 100px; height: 60px; width: 60px;" src="pizza.png" alt="png">
+                <p style="font-size: small; margin-top: 25px;">Pizza</p>
+            </button>
+
+            <button style="margin-left: 10px;" class="img-button">
+                <img style="border-radius: 100px; height: 60px; width: 60px;" src="burger.png" alt="png">
+                <p style="font-size: small; margin-top: 25px;">Burger</p>
+            </button>
+
+            <button style="margin-left: 10px;" class="img-button">
+                <img style="border-radius: 100px; height: 60px; width: 60px;" src="sushi.png" alt="png">
+                <p style="font-size: small; margin-top: 25px;">Sushi</p>
+            </button>
+        </div>
+    </div>
+
+    <div style="display: flex; margin-top: 100px;" class="flex-container">
+        <p style="font-size: 35px; font-weight: bold;">How To Order?</p>
+    </div>
+
+    <div style="display: flex; margin-top: 40px;" class="flex-container">
+        <div>
+            <button class="img-icon">
+                <img style="border-radius: 15px; height: 60px; width: 60px; margin-left: 25px;" src="Lollipop.png"
+                    alt="png">
+                <p style="font-size: small; margin-top: 25px;">Choose your location</p>
+            </button>
+
+            <button style="margin-left: 120px;" class="img-icon">
+                <img style="border-radius: 15px; height: 60px; width: 60px; margin-left: 25px;" src="hooman.png"
+                    alt="png">
+                <p style="font-size: small; margin-top: 25px;">Choose what <br> to eat</p>
+            </button>
+
+            <button style="margin-left: 120px;" class="img-icon">
+                <img style="border-radius: 15px; height: 60px; width: 60px; margin-left: 25px;" src="burgur.png"
+                    alt="png">
+                <p style="font-size: small; margin-top: 25px;">Make your first order</p>
+            </button>
+
+            <button style="margin-left: 120px;" class="img-icon">
+                <img style="border-radius: 15px; height: 60px; width: 60px; margin-left: 25px;" src="home.png"
+                    alt="png">
+                <p style="font-size: small; margin-top: 25px;">Now! your food in way</p>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div style="display: flex; margin-top: 100px;" class="flex-container">
+                <p style="font-size: 35px; font-weight: bold;">Our Clients Feedback</p>
+            </div>
+            <div style="display: flex;" class="flex-container">
+                <p style="width: 30%; text-align: center;">The food at your doorstep. Why starve when you have us. Your
+                    hunger partner. Straight out of the oven to your doorstep.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex;" class="flex-container">
+        <img style="width: 50px; height: 45px; margin: 40px;" src="vect.png" alt="png">
+    </div>
+
+    <div style="display: flex;" class="flex-container">
+        <p style="font-size: 20px; font-weight: bold; width: 40%; text-align: center;"><i>“Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi”</i></p>
+    </div>
+
+    <div style="display: flex; margin-top: 40px;" class="flex-container">
+        <p style="font-size: 18px; font-weight: bold;">Mitchell Marsh</p>
+    </div>
+
+
+    <div style="display: flex;" class="flex-container">
+        <p style="font-size: 15px; font-weight: bold; color: #867e7e;"> CEO, Bexon Agency</p>
+    </div>
+
+    <div style="display: flex; margin-top: 20px;" class="flex-container">
+        <div>
+            <i style="margin-right: 25px;" class="arrow-button1 fas fa-chevron-left"></i>
+            <i style="margin-left: 25px;" class="arrow-button fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <div style="margin-top: 150px; background-color: #FFEFEC;">
+        <div class="navbar">
+            <div style="max-width: 50%;" class="left-element">
+                <div>
+                    <p style="font-size: 25px; font-weight: bold;">Subscribe our newsletter</p>
+                    <p>Browse local restaurants and businesses for delivery by entering your address blow.</p>
+                </div>
+            </div>
+
+
+            <div style="max-width: 30%;" class="right-elements">
+                <div style="margin-top: 50px; margin-bottom: 50px;">
+                    <div>
+                        <form style="background-color: white;" class="input-form">
+                            <input style="background-color: white; margin-left: 20px;" type="text"
+                                id="delivery-location" name="delivery-location" placeholder="Enter your email address">
+                            <button style="margin-left: 80px; margin-right: 5px;" class="signup-button"
+                                type="submit">Order
+                                Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="background-color: black;">
+        <div class="flex-container">
+            <div style="margin-top: 60px; margin-right: 40px;">
+                <a class="homeButton" href="#">🍕</a>
+                <div style="display: flex; margin-top: 40px;">
+                    <div>
+                        <button><img style="border-radius: 10px; max-width: 120px; max-height: 40px;"
+                                src="appleLogo.png" alt="apple logo"></button>
+                    </div>
+                    <div style="margin-left: 10px;"><button><img
+                                style="border-radius: 10px; max-width: 120px; max-height: 40px;" src="googlelogo.png"
+                                alt="google logo"></button></div>
+                </div>
+            </div>
+
+            <div style=" justify-content: flex-end; display: flex;">
+                <div class="m-2 md:m-4 lg:m-8 p-4" style="color: white; ">
+                    <div>
+                        <p style="font-weight: bold;">Quick links</p>
+                        <div style="color: #867e7e; margin-top: 4px;">
+                            <p>Features</p>
+                            <p>Food Menu</p>
+                            <p>Offer</p>
+                            <p>Review</p>
+                            <p>Rider</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="m-2 md:m-4 lg:m-8 p-4" style="color: white;">
+                    <div>
+                        <p style="font-weight: bold;">Get to Know Us</p>
+                        <div style="color: #867e7e; margin-top: 4px;">
+                            <p>Gift Cards</p>
+                            <p>DoorDash Stories</p>
+                            <p>Linkedin</p>
+                            <p>Glassdor</p>
+                            <p>Accessibility</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="m-2 md:m-4 lg:m-8 p-4" style="color: white;">
+                    <div>
+                        <p style="font-weight: bold;">News</p>
+                        <div style="color: #867e7e; margin-top: 4px;">
+                            <p>Blog</p>
+                            <p>FAQ</p>
+                            <p>Lift Media</p>
+                            <p>Press</p>
+                            <p>Presse kit</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="m-2 md:m-4 lg:m-8 p-4" style="color: white;">
+                    <div>
+                        <p style="font-weight: bold;">Contact</p>
+                        <div style="color: #867e7e; margin-top: 4px;">
+                            <p>WhatsApp</p>
+                            <p>Suport 24</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div style="margin-top: 60px;">
+            <div class="navbar">
+                <div style="max-width: 30%;" class="left-element">
+                    <p style="color: white; margin-bottom: 40px;">&copy; 2023 My E-commerce Store</p>
+                </div>
+
+
+                <div style="max-width: 40%; margin-bottom: 40px;" class="right-elements">
+                    <div style="color: #867e7e; display: flex;">
+                        <p style="margin-right: 20px;">Privacy</p>
+                        <p style="margin-right: 20px;">Policy</p>
+                        <p style="margin-right: 20px;">Terms</p>
+                        <p style="padding-right: 40px;">Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
