@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .center-elements {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .left-element,
+        .right-elements {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-elements {
+            gap: 10px;
+        }
+
+        .navbar a {
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .home-icon {
+            width: 42px;
+            height: 42px;
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 56px;
+            text-align: center;
+            color: #302F3C;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            text-decoration: none;
+        }
+
+        .signup-button {
+            background-color: #E94339;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+
+        .signup-button:hover {
+            background-color: #E94339;
+            /* Darker green on hover */
+            color: black;
+            /* Change text color on hover */
+        }
+
+        .bdy {
+            margin-top: 20px;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .input-form {
+            background-color: #dfdfdf;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+            margin-top: 20px;
+        }
+
+        .contains {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .orange-text {
+            color: #E94339;
+        }
+
+        .img-button {
+            background-color: #FAFAFA;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+            max-width: 150px;
+            /* Adjusted width to be consistent */
+        }
+
+        .img-button1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Adjust this to control space between text and image */
+            background-color: #FAFAFA;
+            border: none;
+            padding: 10px 20px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .img-button img,
+        .img-button1 img {
+            border-radius: 20px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .img-button1 img {
+            margin-left: auto;
+        }
+
+        .arrow-button {
+            background-color: #FF5331;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            height: 36px;
+            width: 36px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+        .arrow-button1 {
+            background-color: #E2E2E2;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 100px;
+            max-width: 150px;
+        }
+
+        .img-icon {
+            background-color: #FAFAFA;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+            height: 167px;
+            width: 154px;
+            /* Adjusted width to be consistent */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-element">
+            <a class="homeButton" href="#">🍕</a>
+        </div>
+        <div class="center-elements">
+            <a href="#">Restaurants</a>
+            <a href="#">Recipes</a>
+            <a href="#">About</a>
+            <a href="#">Page <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="right-elements">
+            <a href="#">Login</a>
+            <a class="signup-button" href="#">Sign Up</a>
+        </div>
+    </nav>
+</body>
+
+</html>
